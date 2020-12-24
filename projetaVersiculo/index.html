@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetar Versiculos</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script defer src="index.js"></script>
+    <!-- aplicativo tem objetivo de realizar chamada de voz de versiculo e colocar com fundo personalizado -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+    <select name="versiculos" id="vers">
+        <option value="genesis">Genesis</option>
+        <option value="exodo">Êxodo</option>
+        <option value="levitico">Levítico</option>
+        <option value="numeros">Números</option>
+      </select>
+    <input type="number" id="num" placeholder="digite o número">
+    <input type="file" id="img">
+    <button onclick="versiculo()">Enviar</button>
+
+    <div id="mostrar"></div>
+</body>
+</html>
